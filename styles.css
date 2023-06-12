@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.hero {
+    height: 80vh;
+    width: 100%;
+    background-image: url('images/home5.jpg');
+    background-size: cover;
+    background-position: right;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.hero--title {
+    margin-bottom: 2em;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 1px grey;
+    Font-family: Arial;
+    Font-style: Bold;
+    Font-size: 32px;
+    Line-height: 100%;
+    background-color: rgb(53, 93, 82);
+}
+
+.hero--desc {
+    background-color: purple;
+    padding: 10px 20px;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.72px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/* activities section */
+.activities {
+    width: 100%;
+    background-color: #F1FAEE;
+    text-align: center;
+    color: #1D3557;
+    padding: 1em 0 4em 0;
+}
+
+.activities h1 {
+    padding: 1em 0 0 0;
+}
+
+.card {
+    max-width: 300px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+.card h2 {
+    margin: 1em 0;
+}
+
+.theatre {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
+/* guide section */
+.guide {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guide--card {
+    padding: 1em;
+    margin: 0 auto;
+    width: 700px;
+    color: #1D3557;
+    display: flex;
+    margin: 0 auto;
+    background-color: #A8DADC;
+}
+
+.profile-pic {
+    background-image: url('images/profile.jpg');
+    width: 280px;
+    height: 248.67px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.guide--card img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.guide--desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.guide--desc h2 {
+    margin-top: 1em;
+    font-family: 'Kanit', sans-serif;
+    font-style: Bold;
+    font-size: 24px;
+    font-size: Arial;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.guide--desc p{
+    padding-top: 1em;
+    text-align: center;
+}
+
+.guide--desc h4{
+    padding: 1em 0;
+}
+
+@media screen and (max-width:768px) {
+    /* hero section */
+    .hero--title {
+        font-size: 16px;
+    }
+    .hero--desc{
+        font-size: 15px;
+        padding: 5px;
+        margin: 1em;
+    }
+
+    /* activities */
+    .theatre {
+        flex-wrap: wrap;
+    }
+
+    /* guide */
+
+    .guide--card {
+        padding: 1em;
+        width: 350px;
+        color: #1D3557;
+        display: flex;
+    }
+    
+    .profile-pic {
+        width: 380px;
+        height: 200px;
+        margin-top: .5em;
+    }
+    .guide--desc h2 {
+        font-size: 17px;
+    }
+    
+    .guide--desc p{
+        font-size: 16px;
+    }
+    
+    .guide--desc h4{
+        padding: 1em 0;
+    }
+}
