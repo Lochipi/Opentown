@@ -211,6 +211,22 @@ footer{
     flex-basis:25%;
     padding: 10px;
 }
+.col ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to left, #2d0b00, #ffffff);
+    display: block;
+    margin: auto;
+    margin-left: 2px;
+    transition: 0.5s;
+    font-size: large;
+    
+}
+.col ul li:hover::after{
+    width: 35%;
+    
+}
 .col:nth-child(2),.col:nth-child(3){
     flex-basis: 15%;
 
