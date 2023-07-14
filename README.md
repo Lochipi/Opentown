@@ -6,5 +6,5 @@ Expand your skills, make a difference, and be part of an inclusive and dynamic p
 
 ## Get involved today👨🏻‍💻! 
 
-![image](https://github.com/Lochipi/hometown-Website/assets/108942025/10ca1e20-c7ae-424b-b719-92f2a7a6cfaf)
+![image](https://github.com/Lochipi/hometown-Website/assets/108942025/3a07af0a-fb82-40b2-9fc2-cdea2131e2e3)
 
