@@ -283,9 +283,28 @@ form button .fas{
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
-
-
 }
+
+.fa-facebook:hover{
+    background-color: #38529A;
+    color: white;
+}
+
+.fa-twitter:hover{
+    background-color: #1C96E8;
+    color: white;
+}
+
+.fa-whatsapp:hover{
+    background-color: #1AD03F;
+    color: white;
+}
+
+.fa-instagram:hover{
+    background-color: #D42D6E;
+    color: white;
+}
+
 hr{
     width:90% ;
     border: 0;
