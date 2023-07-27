@@ -20,7 +20,7 @@
 <body>
     <div class="nav">
         <header>
-            <nav>
+            <nav class="fixed-header" >
                 <img src="images/logo1.png" alt="" class="logo">
                 <ul>
                     <li> <a href="#">Home</a></li>
@@ -28,28 +28,40 @@
                     <li> <a href="#">Holidays</a></li>
                     <li> <a href="#">Services</a></li>
                     <li> <a href="#">Contact Us</a></li>
+                    <i class="fa fa-user" id="icon" onclick="toggleIconMenu()"></i>
                 </ul>
                 <button class="btn"><img src="images/icon.png" alt="">Book</button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="arrow"></div>
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                </div>   
             </nav>
+            
             <div class="toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            
             <div class="dropdown">
                 <li> <a href="#">Home</a></li>
                 <li> <a href="#">Destinations</a></li>
                 <li> <a href="#">Holidays</a></li>
                 <li> <a href="#">Services</a></li>
                 <li> <a href="#">Contact Us</a></li>
-                <li><button class="btn"><img src="images/icon.png" alt="">Book</button></li>
+                <li><button class="btn"><img src="images/icon.png" alt="">Book</button></li>        
             </div>
-
+            
         </header>
+       
 
-        <div class="header-content">
-            <h1>Amazing places to explore in <b style="color:#5aa731;">kenya.</b> </h1>
-            <p>From breathtaking natural wonders to vibrant cities pulsating with culture, our curated collection of
-                amazing places will ignite your wanderlust and leave you yearning for new experiences.</p>
-            <form action="#" class="Search">
+        
+        
+
+
+       <div class="header-content">
+            <h1>Amazing places to explore in <b style="color:#5aa731 ;">kenya.</b> </h1>
+            <p>From breathtaking natural wonders to vibrant cities pulsating with culture, our curated collection of amazing places will ignite your wanderlust and leave you yearning for new experiences.</p>
+            <form action="" class="Search">
                 <input type="text" placeholder="Search place">
                 <button type="submit" class="btn1"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>

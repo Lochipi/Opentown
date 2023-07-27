@@ -18,3 +18,8 @@ toggleBtn.onclick = function (){
     ? 'fa fa-angle-double-right'
     : 'fa-solid fa-bars'
 }
+/*drop down icon */
+function toggleIconMenu() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+}
