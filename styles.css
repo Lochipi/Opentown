@@ -6,7 +6,7 @@
 }
 body{
     height: 100vh;
-    background-color: #000;
+    /* background-color: #000; */
     background-size: cover;
     background-position: center;
 }
@@ -117,6 +117,7 @@ nav ul li:hover::after{
     font-weight: 500;
     cursor: pointer;
 }
+
 .btn:hover{
     scale: 1.05;
     transition: 0.3s;
@@ -161,7 +162,7 @@ nav ul li:hover::after{
     top: 100px;
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 2em auto;
     color: #fff;
     text-align: center;
     position: relative;
@@ -275,6 +276,18 @@ nav ul li:hover::after{
  
 
 /*Responsive query*/
+@media screen and (max-width: 576px){
+    .header-content {
+        margin-top: 3em;
+    }
+    
+    .header-content h1{
+        font-size: 2rem;
+        margin: 0 0 1em 0;
+        line-height: 1;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav  {
       width: 100%; 
@@ -318,6 +331,15 @@ nav ul li:hover::after{
     .dropdown li a:hover::after{
         width: 100%;
     }
+
+    /* header content */
+
+    .header-content h1{
+        font-size: 2rem;
+        margin: 0 0 1em 0;
+        line-height: 1;
+    }
+
     
     .fixed-header{
         display: none;
@@ -479,9 +501,8 @@ nav ul li:hover::after{
         padding: 1em 0;
     }
 }
-body{
-    background: rgb(253, 253, 253);
-}
+
+
 footer{
     width: 100%;
     bottom: 0;
