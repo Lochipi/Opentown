@@ -10,6 +10,49 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+.fixed-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(12px);
+    background: rgba(33, 33, 33, 0.3);
+
+    z-index: 100;
+     
+  }
+#icon{
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color:#5aa731;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 40px;
+}
+#icon:hover{
+    background-color:#a7f57c ;
+    color: #000;
+    
+}
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff; 
+    position: absolute;
+    top: -7px;
+    right: 40px;
+}
+
+ 
+
+
+  
 .nav{
     width: 100%;
     min-height: 100vh;
@@ -74,9 +117,6 @@ nav ul li:hover::after{
     color: #fff;
     font-weight: 500;
     cursor: pointer;
-    
-    
-
 }
 .btn:hover{
     scale: 1.05;
@@ -92,7 +132,34 @@ nav ul li:hover::after{
     color: #5aa731;
 }
 
+/*drop down icon*/
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    top: 75px;
+    right: 120px;
+    border-radius: 12px;
+    
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #adfa84;
+    border-radius: 12px;
+}
+
+
 .header-content{
+    top: 100px;
     width: 80%;
     max-width: 800px;
     margin: 0 auto;
@@ -134,8 +201,18 @@ nav ul li:hover::after{
     top: 0.5rem;
 
 }
+
+
+
+
+
+
+
+
+
 /*Dropdown menu*/
 .dropdown{
+    
     display: none;
     position: absolute;
     right: 1.1rem;
@@ -162,7 +239,41 @@ nav ul li:hover::after{
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
+
+.drop-content{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    left: 5px;
+    right: 350px;
+    background: rgba(144, 144, 144, 0.3); 
+    backdrop-filter: blur(6px); 
+    border-radius: 25px;
+    padding: 20px;
+    
+}
+.drop-content h1{
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+.drop-content form{
+    display: flex;
+    background: #fff;
+    border-radius: 9px;
+    padding: 20px 10px;
+    margin-top: 40px;
+    background-color: #121212;
+    border: none;
+    
+}
+ 
 
 /*Responsive query*/
 @media screen and (max-width: 768px) {
@@ -208,6 +319,24 @@ nav ul li:hover::after{
     .dropdown li a:hover::after{
         width: 100%;
     }
+    
+    .fixed-header{
+        display: none;
+    }
+    .header-content{
+        display: none;
+    }
+    
+  }
+  @media screen and (min-width: 768px){
+    .drop-content{
+        display: none;
+    }
+    .btn{
+        position: relative;
+        right: 30px;
+    }
+
   }
 
 
