@@ -1,4 +1,4 @@
-# hometown-Website
+# Opentown
 ## An open-source website
 Built with **HTML**, **CSS**, and **JavaScript**, inviting developers to contribute and collaborate. Join a community of like-minded individuals to enhance functionality, improve design, and add new features. 
 
