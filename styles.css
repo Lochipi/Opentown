@@ -346,6 +346,7 @@ nav ul li:hover::after{
     }
     .header-content{
         display: block;
+        top: 0;
     }
     
   }
