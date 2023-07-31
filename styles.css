@@ -17,7 +17,7 @@ body{
     width: 100%;
     position: fixed;
     backdrop-filter: blur(12px);
-    background: rgba(33, 33, 33, 0.3);
+    background: rgba(178, 178, 178, 0.3);
 
     z-index: 100; 
     
@@ -265,6 +265,26 @@ nav ul li:hover::after{
     border: none;
     
 }
+.account {
+    display: block;
+    justify-content: flex-end;
+    align-items: left;
+    text-align: left;
+    
+    padding: 4px;
+}
+.account a {
+    text-decoration: none;
+    color: #fcfbfb;
+    padding: 8px 9px;
+    margin-left: 5px;
+    border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.account a:hover {
+    background-color: #adfa84;
+    color: #020202;
+}
  
 
 /*Responsive query*/
@@ -323,6 +343,7 @@ nav ul li:hover::after{
     .dropdown li a:hover::after{
         width: 100%;
     }
+    
 
     /* header content */
 
@@ -350,7 +371,7 @@ nav ul li:hover::after{
         position: relative;
         right: 30px;
     }
-
+    
   }
 
 
