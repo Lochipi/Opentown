@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <div class="outbutton">
+        <button id="signoutbtn">SignOut</button>
+    </div>
+    
+    <div class="typewriter">
+        <h1>WELCOME TO OPEN TOWN</h1>
+        <div id="typing-container">
+            <p class="typing" id="r">This page is under development......</p>
+            <p class="typing" id="g">We will be launching soon...</p>
+            <p class="typing" id="b">Thank you for being a beta tester</p>
+        </div>
+        <div id="welcome-message"></div>
+        
+    </div>
+
+    <script type="module">
+         // Import the functions you need from the SDKs you need
+         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+         import {
+             getAuth,
+             createUserWithEmailAndPassword,
+             signInWithEmailAndPassword,
+             onAuthStateChanged,
+             signOut
+ 
+         } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+         // TODO: Add SDKs for Firebase products that you want to use
+         // https://firebase.google.com/docs/web/setup#available-libraries
+       
+         // Your web app's Firebase configuration
+         const firebaseConfig = {
+           apiKey: "AIzaSyDvoVl8slsH3_TLWOwX0-6sulV3P3dG9jE",
+           authDomain: "opentown-1e73f.firebaseapp.com",
+           projectId: "opentown-1e73f",
+           storageBucket: "opentown-1e73f.appspot.com",
+           messagingSenderId: "442289803979",
+           appId: "1:442289803979:web:22fb27978f9534fdd2014e"
+         };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const signoutbtn = document.querySelector("#signoutbtn");
+
+        const userLogin =  async() => {
+            
+            const loginEmail = email.value;
+            const loginPassword = password.value;
+            signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+            .then((userCredential) => {
+                const user = userCredential.user
+                alert("Logged in succesfully!");
+            } )
+            .catch((error) =>{
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode + errorMessage)
+                alert(errorMessage)
+            })
+        }
+
+        const checkAuthState = async() => {
+            onAuthStateChanged(auth, user => {
+                if (user){
+                    
+                }
+                else{
+                    window.location.href = "../index.html";
+                    
+                }
+            })
+        }
+        checkAuthState();
+
+        const signout = async() => {
+            await signOut(auth);
+        }
+        signoutbtn.addEventListener("click", signout);
+
+    </script>
+    <script src="Home.js"></script>
+</body>
+</html>

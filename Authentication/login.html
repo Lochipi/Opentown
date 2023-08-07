@@ -13,17 +13,90 @@
     </div>
     
     <div class="container">
-        <form action="login_handler.php" method="post">
+        
             <h2>Login</h2>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Login</button>
-        </form>
+            <button id="loginbtn" >Login</button>
+        
         <p style="color: white;">Don't have an account? <a href="signup.html">Sign Up</a></p>
     </div>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut
+
+        } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDvoVl8slsH3_TLWOwX0-6sulV3P3dG9jE",
+          authDomain: "opentown-1e73f.firebaseapp.com",
+          projectId: "opentown-1e73f",
+          storageBucket: "opentown-1e73f.appspot.com",
+          messagingSenderId: "442289803979",
+          appId: "1:442289803979:web:22fb27978f9534fdd2014e"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        
+        const email = document.querySelector("#email");
+        const password = document.querySelector("#password");
+        const container = document.querySelector("#container");
+        const loginbtn = document.querySelector("#loginbtn");
+
+        
+
+        const userLogin =  async() => {
+            
+            const loginEmail = email.value;
+            const loginPassword = password.value;
+            signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+            .then((userCredential) => {
+                const user = userCredential.user
+                alert("Logged in succesfully!");
+                window.location.href = "Home.html";
+            } )
+            .catch((error) =>{
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode + errorMessage)
+                alert(errorMessage)
+            })
+        }
+
+        const checkAuthState = async() => {
+            onAuthStateChanged(auth, user => {
+                if (user){       
+                }
+                else{    
+             }
+            })
+        }
+        checkAuthState();
+
+        
+
+        
+        loginbtn.addEventListener("click", userLogin);
+        
+
+      </script>
+    <script src="Home.js"></script>
 </body>
 </html>
