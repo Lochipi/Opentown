@@ -7,6 +7,10 @@
 
 Open Town is an open source project that allows users to create and share their own custom towns. Towns can be created in a variety of styles, including medieval, modern, and futuristic. Users can also add their own custom buildings, characters, and objects to their towns.
 
+**Tech Stack**
+ - FrontEnd: HTML, CSS, JavaScript
+ - Backend: Firebase
+   
 **Features**
 
 * Create your own custom town in a variety of styles.
