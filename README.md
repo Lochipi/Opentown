@@ -5,7 +5,7 @@
 
 **Introduction**
 
-Open Town is an open source project that allows users to create and share their own custom towns. Towns can be created in a variety of styles, including medieval, modern, and futuristic. Users can also add their own custom buildings, characters, and objects to their towns.
+Open Town is an open-source project that allows users to create and share their custom towns. Towns can be created in a variety of styles, including medieval, modern, and futuristic. Users can also add their own custom buildings, characters, and objects to their towns.
 
 **Tech Stack**
  - FrontEnd: HTML, CSS, JavaScript
@@ -13,7 +13,7 @@ Open Town is an open source project that allows users to create and share their 
    
 **Features**
 
-* Create your own custom town in a variety of styles.
+* Create your custom town in a variety of styles.
 * Add your own custom buildings, characters, and objects to your town.
 * Share your town with others online.
 * Download and play other people's towns.
@@ -21,7 +21,7 @@ Open Town is an open source project that allows users to create and share their 
 
 **Motivation**
 
-I created Open Town because I wanted to create a platform that would allow people to express their creativity and share their imaginations with others. I also wanted to create a tool that would help people learn about different cultures and time periods.
+I created Open Town because I wanted to create a platform that allows people to express their creativity and share their imaginations with others. I also wanted to create a tool that would help people learn about different cultures and periods.
 
 **How to use**
 
@@ -29,7 +29,7 @@ To use Open Town, you will need to download the software from the GitHub reposit
 
 **Contributing**
 
-Open Town is an open source project, so anyone can contribute to the development of the software. If you have any ideas for new features or improvements, please feel free to open an issue on the GitHub repository.
+Open Town is an open-source project so that anyone can contribute to the development of the software. If you have any ideas for new features or improvements, please feel free to open an issue on the GitHub repository.
 
 * * *
 
@@ -37,4 +37,6 @@ Open Town is an open source project, so anyone can contribute to the development
 ## Overview👨🏻‍💻! 
 
 ![image](https://github.com/Lochipi/hometown-Website/assets/108942025/3a07af0a-fb82-40b2-9fc2-cdea2131e2e3)
+
+Leave a star if you found this repo useful for contribution.⭐
 
