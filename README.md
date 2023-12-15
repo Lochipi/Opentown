@@ -30,6 +30,7 @@ To use Open Town, you will need to download the software from the GitHub reposit
 **Contributing**
 
 Open Town is an open-source project so that anyone can contribute to the development of the software. If you have any ideas for new features or improvements, please feel free to open an issue on the GitHub repository.
+I look forward to merging your PR
 
 * * *
 
