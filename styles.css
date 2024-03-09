@@ -55,7 +55,7 @@ body{
 .nav{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(18, 13, 60, 0.65),rgba(96, 22, 22, 0.65)), url(images/background.jpg);
+    background-image: linear-gradient(rgba(18, 13, 60, 0.65),rgba(96, 22, 22, 0.402)), url(images/background.jpg);
     background-size:cover ;
     background-position: center;
     padding: 10px 2%;
